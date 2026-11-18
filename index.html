@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Activities Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #253b80;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 50px 20px;
+        }
+
+        .activities {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #253b80;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #253b80;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .card a:hover {
+            background: #405bb0;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Activities Website</h1>
+        <p>Welcome! Explore my weekly activities and outputs.</p>
+    </header>
+
+    <main>
+        <h2>My Weekly Activities</h2>
+        <p>Select a week to view the activities.</p>
+
+        <div class="activities">
+
+            <div class="card">
+                <h2>Week 1</h2>
+                <p>View my Week 1 activities and outputs.</p>
+                <a href="week1/index.html">View Week 1</a>
+            </div>
+
+            <div class="card">
+                <h2>Week 2</h2>
+                <p>View my Week 2 activities and outputs.</p>
+                <a href="week2/index.html">View Week 2</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>My Activities Website &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
