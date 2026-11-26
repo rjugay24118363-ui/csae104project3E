@@ -1,0 +1,261 @@
+
+/* GENERAL DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #F7F8F2;
+    color: #263A30;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    padding: 18px 28px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E3EAE3;
+}
+
+/* SCHOOL LOGO */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* SCHOOL NAME */
+.school-name {
+    font-size: 21px;
+    color: #164E3B;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 15px;
+    background: #164E3B;
+    border-bottom: 4px solid #A8C9A8;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #BFE3C2;
+}
+
+/* MAIN CONTENT */
+.content {
+    display: flex;
+    min-height: 360px;
+}
+
+/* CAMPUS NOTICE */
+.campus-notice {
+    width: 50%;
+    padding: 28px 25px;
+    border-right: 1px solid #E3EAE3;
+    background: white;
+}
+
+/* SECTION HEADINGS */
+.campus-notice h2,
+.post-notice h2 {
+    margin-bottom: 20px;
+    color: #164E3B;
+    font-size: 22px;
+    border-left: 4px solid #79A982;
+    padding-left: 10px;
+}
+
+/* NOTICE IMAGES */
+.image-container {
+    display: flex;
+    gap: 12px;
+}
+
+.image-container img {
+    width: 33.33%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 1px solid #DCE5DC;
+}
+
+.image-container img:hover {
+    box-shadow: 0 4px 12px rgba(22, 78, 59, 0.15);
+}
+
+/* POST NOTICE */
+.post-notice {
+    width: 50%;
+    padding: 28px 25px;
+    background: #F4F8F2;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #164E3B;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #C9D8CA;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #397B56;
+}
+
+.form-group textarea {
+    height: 105px;
+    resize: vertical;
+}
+
+/* POST BUTTON */
+button {
+    background: #164E3B;
+    color: white;
+    padding: 11px 23px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #397B56;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #164E3B;
+    border-top: 4px solid #A8C9A8;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .campus-notice,
+    .post-notice {
+        width: 100%;
+    }
+
+    .campus-notice {
+        border-right: none;
+        border-bottom: 1px solid #E3EAE3;
+    }
+
+    .image-container img {
+        height: 120px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    .school-name {
+        font-size: 17px;
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .school-name {
+        font-size: 14px;
+    }
+
+    nav {
+        gap: 16px;
+        padding: 13px 8px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .image-container {
+        gap: 7px;
+    }
+
+    .image-container img {
+        height: 90px;
+    }
+
+    .campus-notice,
+    .post-notice {
+        padding: 22px 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
